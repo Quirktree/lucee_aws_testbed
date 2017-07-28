@@ -1,0 +1,9 @@
+lucee51:
+  build: .
+  ports:
+    - "8080:80"
+  volumes:
+    - $HOME/.aws:/root/.aws
+    - ./www:/var/www
+  environment:
+    - AWS_PROFILE
